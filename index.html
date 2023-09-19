@@ -4,8 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Audio player</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <wrapper class="bodyWrapper">
+        <img src="./img/In_The_End.jpg" id = "background">
+        <audio src="./audio/Linkin Park - In The End.mp3" id = "song"></audio>
+        <div class="content">
+            <img src="./img/In_The_End.jpg" id = "songImage">
+            <div class="playersContainer"></div>
+            <img src="./svg/play.png" id = "play_pause">
+            <img src="./svg/backward.png" id = "prev">
+            <img src="./svg/forward.png" id = "next">
+            <div  class="song_artist">Linkin Park</div>
+            <div class="song_title">In the end</div>
+            <input type="range" id="progress">
+            <div class="currentTime"></div>
+            <div class="durationTime"></div>
+        </div>
+    </wrapper>
+    <script src="index.js"></script>
 </body>
 </html>
