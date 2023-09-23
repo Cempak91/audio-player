@@ -5,8 +5,8 @@ const prev = document.getElementById ("prev")
 const next = document.getElementById ("next")
 const songArtist = document.querySelector (".song_artist")
 const songTitle = document.querySelector (".song_title")
-const progress = document.querySelector (".progress")
-const currentTime = document.querySelector (".currentTime")
+const progress = document.getElementById ("progress")
+const currentTimeNum = document.querySelector (".currentTime")
 const durationTime = document.querySelector (".durationTime")
 const audio = document.getElementById ("song")
 const content = document.querySelector (".content")
@@ -21,14 +21,22 @@ function loadSong(song) {
     } else {
         songArtist.innerHTML = "Rock Privet"
         songTitle.innerHTML = "Faint _ Omen" 
-        console.log (songIndex)  
     }
     audio.src = `audio/${song}.mp3`
     background.src = `img/${song}.jpg`
     songImage.src = `img/${song}.jpg`
 }
 
+
 loadSong(songs[songIndex]);
+
+audio.onloadeddata =() => {
+    let minute = Math.floor(audio.duration /60);
+    let second = Math.floor(audio.duration % 60);
+    durationTime.innerHTML = [  minute.toString().padStart(2, '0'),
+    second.toString().padStart(2, '0')
+].join(":")
+}
 
 function playSong () {
     play.src = `svg/pause.png`
@@ -71,3 +79,24 @@ function prevSong () {
 
 next.addEventListener("click", nextSong)
 prev.addEventListener("click", nextSong)
+
+function changeProgress(e) {
+    const {duration, currentTime} = e.srcElement
+    const progressPercent = (currentTime / duration) * 100
+    progress.value = progressPercent
+    let minute = Math.floor(currentTime /60)
+    let second = Math.floor(currentTime % 60)
+    currentTimeNum.innerHTML = [  minute.toString().padStart(2, '0'),
+    second.toString().padStart(2, '0')
+].join(":")
+}
+
+audio.addEventListener("timeupdate", changeProgress)
+
+function setProgress (e) {
+    const width = this.clientWidth
+    const userClick = (progress.value / 100) * audio.duration
+    audio.currentTime = userClick
+}
+
+progress.addEventListener("input", setProgress)
