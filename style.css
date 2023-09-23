@@ -1,3 +1,7 @@
+body {
+    margin: 0;
+}
+
 .bodyWrapper {
     display: block;
     width: 100%;
@@ -17,17 +21,17 @@
 .content {
     display: flex;
     position: absolute;
-    top:50%;
-    left:50%;
-    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-55%);
     z-index: 2;
-    height: 400pt;
-    width: 300pt;
+    height: 60%;
+    width: 40%;
     border-radius: 20px;
     box-shadow: 0 0 10px #000;
     justify-content: center;
     overflow: hidden;
-    background-color:gray;
+    background-color: gray;
 }
 
 .playersContainer {
@@ -42,90 +46,101 @@
 #songImage {
     position:absolute;
     z-index: 2;
-    height: 320pt;
+    height: 130%;
 }
 
 #play_pause{
     position: absolute;
-    width: 50pt;
-    height: 50pt;
+    width: 15%;
+    height: 15%;
     cursor: pointer;
     z-index: 4;
     bottom: 12%;
     filter: drop-shadow(3px 4px 6px white);
-    left: 40pt;
+    left: 5%;
+    transition:all 0.6s ease-in-out;
 }
 
 #prev{
     position: absolute;
-    width: 30pt;
-    height: 30pt;
+    width: 10%;
+    height: 10%;
     cursor: pointer;
     z-index: 4;
     bottom: 20%;
     filter: drop-shadow(1px 2px 3px white);
-    right: 40pt;
+    right: 5%;
 }
 
 #next{
     position: absolute;
-    width: 30pt;
-    height: 30pt;
+    width: 10%;
+    height: 10%;
     cursor: pointer;
     z-index: 4;
-    bottom: 11%;
+    bottom: 5%;
     filter: drop-shadow(1px 2px 3px white);
-    right: 40pt;
+    right: 5%;
 }
 
 .song_artist {
-    max-width: 100pt;
+    width: 60%;
     position: absolute;
     z-index: 4;
     color: goldenrod;
-    font-size: 20pt;
+    font-size: 800%;
     bottom: 20%;
-    left: 37%;
+    TEXT-ALIGN: center;
 }
 
 .song_title {
-    max-width: 110pt;
+    width: 60%;
     position: absolute;
     z-index: 4;
     color: white;
-    font-size: 15pt;
+    font-size: 500%;
     bottom: 12%;
-    left: 37%;
+    TEXT-ALIGN: center;
 }
 
 #progress {
     position: absolute;
     z-index: 4;
-    bottom: 4%;
+    bottom: 6%;
     left: 20%;
     height: 7px;
     background: #000;
     appearance: none;
     cursor: pointer;
-    width: 200px;
+    width: 60%;
+}
+
+#progress::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 40px;
+    height: 40px;
+    border-radius:50%;
+    background: #DAA520;
+    cursor: pointer;
 }
 
 .currentTime{
     position: absolute;
     z-index: 4;
-    bottom: 0.5%;
+    bottom: 1%;
     color: white;
     left: 20%;
-    font-size: 10pt;
+    font-size: 400%;
 }
 
 .durationTime{
     position: absolute;
     z-index: 4;
-    bottom: 6%;
+    bottom: 8%;
     color: goldenrod;
-    right: 30%;
-    font-size: 10pt;
+    right: 20%;
+    font-size: 400%;
 }
 
 .footer{
@@ -144,19 +159,19 @@
 }
 
 .year{
-    font-size: 15px;
-    color:white;
-    margin-left: 10pt;
+    font-size: 600%;
+    color: white;
+    margin-left: 2%;
 }
 
 .rs_school{
-    width: 150pt;
-    height: 30pt;
+    width: 120%;
     filter: invert(1);
 }
 
 .myGit {
-    margin-right: 10pt;
+    margin-right: 2%;
     color: white;
     text-decoration: none;
+    font-size: 800%;
 }

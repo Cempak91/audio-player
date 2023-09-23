@@ -1,0 +1,200 @@
+@media (max-width: 1920px) {
+    .song_artist {
+        font-size: 400%;
+    }
+    .song_title {
+        font-size: 200%;
+        bottom: 14%;
+    }
+    #progress {
+        height: 5px;
+    }
+    #progress::-webkit-slider-thumb {
+        width: 20px;
+        height: 20px;
+    }
+    .currentTime {
+        font-size: 150%;
+    }
+    .durationTime {
+        font-size: 150%;
+    }
+    .year {
+        font-size: 300%;
+    }
+    .rs_school {
+        width: 40%;
+    }
+    .myGit {
+        font-size: 300%;
+    }
+}
+
+@media (max-width: 1366px) {
+    .song_artist{
+        font-size: 300%;
+    }
+    .song_title {
+        font-size: 150%;
+    }
+    #songImage {
+        height: 90%;
+    }
+    #progress {
+        height: 3px;
+        bottom:7%
+    }
+    #progress::-webkit-slider-thumb {
+        width: 15px;
+        height: 15px;
+    }
+    .currentTime {
+        font-size: 100%;
+        bottom:2%;
+    }
+    .durationTime {
+        font-size: 100%;
+        bottom:10%;
+    }
+    .year {
+        font-size: 200%;
+    }
+    .rs_school {
+        width: 30%;
+        margin-left: 40%;
+    }
+    .myGit {
+        font-size: 200%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .content {
+        height: 50%;
+        width: 35%;
+    }
+    #play_pause {
+        width: 12%;
+        height: 12%;
+        left: 10%;
+    }
+    #prev {
+        width: 8%;
+        height: 8%;
+        right: 8%;
+    }
+
+    #next {
+        width: 8%;
+        height: 8%;
+        right: 8%;
+        bottom: 8%;
+    }
+    .song_artist{
+        font-size: 180%;
+    }
+    .song_title {
+        font-size: 100%;
+    }
+    #progress::-webkit-slider-thumb {
+        width: 12px;
+        height: 12px;
+    }
+}
+
+@media (max-width:800px) {
+    .song_artist{
+        font-size: 120%;
+    }
+    .song_title {
+        font-size: 70%;
+    }
+        #progress::-webkit-slider-thumb {
+        width: 10px;
+        height: 10px;
+    }
+    .currentTime {
+        font-size: 70%;
+    }
+    .durationTime {
+        font-size: 70%;
+    }
+    .year {
+        font-size: 100%;
+    }
+    .rs_school {
+        width: 20%;
+        margin-left: 50%;
+    }
+    .myGit {
+        font-size: 100%;
+    }
+}
+
+@media (max-width:415px) {
+    .content {
+        height: 50%;
+        width: 80%;
+    }
+    #songImage {
+        height: 80%;
+    }
+    #play_pause {
+        width: 18%;
+        height: 13%;
+    }
+    #prev {
+        width: 13%;
+        height: 10%;
+    }
+    #next {
+        width: 13%;
+        height: 10%;
+    }
+    .song_artist {
+        font-size: 170%;
+        bottom: 25%;
+    }
+    .song_title {
+        font-size: 100%;
+        bottom: 15%;
+    }
+    #progress {
+        width: 55%;
+        bottom: 6%;
+    }
+    .currentTime {
+        font-size: 100%;
+        bottom: 1%;
+    }
+    .durationTime {
+        font-size: 100%;
+        bottom: 8%;
+        right: 25%;
+    }
+}
+
+@media (max-width: 375px) {
+    .song_artist {
+        font-size: 150%;
+        bottom: 23%;
+    }
+    .currentTime {
+        font-size: 80%;
+        bottom: 1%;
+    }
+    .durationTime {
+        font-size: 80%;
+    }
+    #play_pause {
+        width: 14%;
+        height: 11%;
+        bottom: 14%;
+    }
+    #prev {
+        width: 11%;
+    }
+    #next {
+        width: 11%;
+    }
+}

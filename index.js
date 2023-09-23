@@ -39,13 +39,25 @@ audio.onloadeddata =() => {
 }
 
 function playSong () {
-    play.src = `svg/pause.png`
+    play.style.opacity =0.05;
+    setTimeout(changePlay,600)
     content.classList.add ("played")
     audio.play()
 }
 
-function pauseSong () {
+function changePause () {
     play.src = `svg/play.png`
+    play.style.opacity =1;
+}
+
+function changePlay () {
+    play.src = `svg/pause.png`
+    play.style.opacity =1;
+}
+
+function pauseSong () {
+    play.style.opacity =0.05;
+    setTimeout(changePause,600)
     content.classList.remove ("played")
     audio.pause()
 }
