@@ -1,0 +1,186 @@
+body {
+    margin: 0;
+}
+
+.bodyWrapper {
+    display: block;
+    width: 100%;
+    height: 95%;
+}
+
+#background {
+    position: absolute;
+    height: 95%;
+    width: 100%;
+    filter: blur(5px);
+    z-index: -1;
+    left: 0;
+    right: 0;
+}
+
+.content {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-55%);
+    z-index: 2;
+    height: 60%;
+    width: 40%;
+    border-radius: 20px;
+    box-shadow: 0 0 10px #000;
+    justify-content: center;
+    overflow: hidden;
+    background-color: gray;
+}
+
+.playersContainer {
+    background: gray;
+    position: absolute;
+    bottom: -15%;
+    z-index: 3;
+    width: 100%;
+    height: 50%;
+}
+
+#songImage {
+    position:absolute;
+    z-index: 2;
+    height: 130%;
+}
+
+#play_pause{
+    position: absolute;
+    width: 15%;
+    height: 15%;
+    cursor: pointer;
+    z-index: 4;
+    bottom: 12%;
+    filter: drop-shadow(3px 4px 6px white);
+    left: 5%;
+    transition:all 0.6s ease-in-out;
+}
+
+#play_pause:hover,
+#prev:hover,
+#next:hover {
+    transform: scale(1.2,1.2);
+}
+
+#prev{
+    position: absolute;
+    width: 10%;
+    height: 10%;
+    cursor: pointer;
+    z-index: 4;
+    bottom: 20%;
+    filter: drop-shadow(1px 2px 3px white);
+    right: 5%;
+    transition:all 0.6s ease-in-out;
+}
+
+
+#next{
+    position: absolute;
+    width: 10%;
+    height: 10%;
+    cursor: pointer;
+    z-index: 4;
+    bottom: 5%;
+    filter: drop-shadow(1px 2px 3px white);
+    right: 5%;
+    transition:all 0.6s ease-in-out;
+}
+
+.song_artist {
+    width: 60%;
+    position: absolute;
+    z-index: 4;
+    color: goldenrod;
+    font-size: 800%;
+    bottom: 20%;
+    TEXT-ALIGN: center;
+}
+
+.song_title {
+    width: 60%;
+    position: absolute;
+    z-index: 4;
+    color: white;
+    font-size: 500%;
+    bottom: 12%;
+    TEXT-ALIGN: center;
+}
+
+#progress {
+    position: absolute;
+    z-index: 4;
+    bottom: 6%;
+    left: 20%;
+    height: 7px;
+    background: #000;
+    appearance: none;
+    cursor: pointer;
+    width: 60%;
+}
+
+#progress::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 40px;
+    height: 40px;
+    border-radius:50%;
+    background: #DAA520;
+    cursor: pointer;
+}
+
+.currentTime{
+    position: absolute;
+    z-index: 4;
+    bottom: 1%;
+    color: white;
+    left: 20%;
+    font-size: 400%;
+}
+
+.durationTime{
+    position: absolute;
+    z-index: 4;
+    bottom: 8%;
+    color: goldenrod;
+    right: 20%;
+    font-size: 400%;
+}
+
+.footer{
+    display: flex;
+    height: 5%;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    left: -1vw;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.year{
+    font-size: 600%;
+    color: white;
+    margin-left: 2%;
+}
+
+.rs_school{
+    width: 120%;
+    filter: invert(1);
+}
+
+.myGit {
+    margin-right: 2%;
+    color: white;
+    text-decoration: none;
+    font-size: 800%;
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio player</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="adapt.css">
+</head>
+<body>
+    <wrapper class="bodyWrapper">
+        <img src="./img/Linkin Park - In The End.jpg" id = "background">
+        <audio src="./audio/Linkin Park - In The End.mp3" id = "song"></audio>
+        <div class="content">
+            <img src="./img/Linkin Park - In The End.jpg" id = "songImage">
+            <div class="playersContainer"></div>
+            <img src="./svg/play.png" id = "play_pause">
+            <img src="./svg/backward.png" id = "prev">
+            <img src="./svg/forward.png" id = "next">
+            <div  class="song_artist">Linkin Park</div>
+            <div class="song_title">In the end</div>
+            <input type="range" id="progress" value="0" min="0" max="100" step="1" >
+            <div class="currentTime">0:00</div>
+            <div class="durationTime"></div>
+        </div>
+    </wrapper>
+    <footer class="footer">
+        <span class="year">2023</span>
+        <a href="https://rs.school/js-stage0/" target="_blank">
+            <img src="./svg/rs_school_js.svg" class="rs_school">
+        </a>
+        <a class="myGit" href="https://github.com/Cempak91" target="_blank"> Viktor </a>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>
